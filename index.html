@@ -1,0 +1,42 @@
+<! doctype html>
+<html>
+<head>
+	<title>A</title>
+	<script type="text/javascript" src="js.js"></script>
+	<meta charset="utf-8" name="viwerport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSSGO.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="line">
+			<label> Digite o preço da gasolina </label>
+			<input type="text" name="valor1" id="valor1" size="3" />
+		</div>
+		
+		<div class="line">
+			<label >Digite o preço do alcool </label>
+			<input type="text" name="valor2" id="valor2" size="3"  />
+		</div>
+		
+		<div class="line">
+			<label for="valor3">Digite o fator </label>
+			<input type="text" name="valor3" id="valor3" size="3" value="0.7" />
+		</div>
+
+		<div class="box">
+			<img id="img" src="padrao.png">
+		</div>
+
+		<p class="info">
+			Caso não saiba o fator de consumo do seu carro basta conferir na tabela do
+			<a href="http://www.inmetro.gov.br/consumidor/tabelas_pbe_veicular.asp">INMETRO</a>
+		</p>
+		
+		<input type="button" value="Calcular" class="botao" onclick="comparar()"/>
+		
+		<label>Resultado:</label>
+		<input type="text" name="res" id="res" />
+	</div>
+</body>
+</html>
